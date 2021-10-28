@@ -62,6 +62,11 @@ public class partido_a_jugadores {
     public void setResultado(boolean resultado) {
         this.resultado = resultado;
     }
+
+    @Override
+    public String toString() {
+        return "partido_a_jugadores{" + "id_partido_a_jugadores=" + id_partido_a_jugadores + ", partido=" + partido + ", jugador=" + jugador + ", resultado=" + resultado + '}';
+    }
     
     
 }

@@ -51,6 +51,11 @@ public class Patrocinio {
     public void setPatrocinador(Patrocinador patrocinador) {
         this.patrocinador = patrocinador;
     }
+
+    @Override
+    public String toString() {
+        return "Patrocinio{" + "id_patrocinio=" + id_patrocinio + ", jugador=" + jugador + ", patrocinador=" + patrocinador + '}';
+    }
     
     
 }

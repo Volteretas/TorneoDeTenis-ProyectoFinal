@@ -6,6 +6,7 @@
 package torneodetenis.modelo;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  *
@@ -15,11 +16,11 @@ public class Partido {
     private int id_partido;
     private Torneo torneo;
     private Estadio estadio;
-    private LocalDate fechayhora;
+    private LocalDateTime fechayhora;
     private String estado;
     private String resultado;
 
-    public Partido(int id_partido, Torneo torneo, Estadio estadio, LocalDate fechayhora, String estado, String resultado) {
+    public Partido(int id_partido, Torneo torneo, Estadio estadio, LocalDateTime fechayhora, String estado, String resultado) {
         this.id_partido = id_partido;
         this.torneo = torneo;
         this.estadio = estadio;
@@ -28,7 +29,7 @@ public class Partido {
         this.resultado = resultado;
     }
 
-    public Partido(Torneo torneo, Estadio estadio, LocalDate fechayhora, String estado, String resultado) {
+    public Partido(Torneo torneo, Estadio estadio, LocalDateTime fechayhora, String estado, String resultado) {
         this.torneo = torneo;
         this.estadio = estadio;
         this.fechayhora = fechayhora;
@@ -63,11 +64,11 @@ public class Partido {
         this.estadio = estadio;
     }
 
-    public LocalDate getFechayhora() {
+    public LocalDateTime getFechayhora() {
         return fechayhora;
     }
 
-    public void setFechayhora(LocalDate fechayhora) {
+    public void setFechayhora(LocalDateTime fechayhora) {
         this.fechayhora = fechayhora;
     }
 
@@ -85,6 +86,11 @@ public class Partido {
 
     public void setResultado(String resultado) {
         this.resultado = resultado;
+    }
+
+    @Override
+    public String toString() {
+        return "Partido{" + "id_partido=" + id_partido + ", torneo=" + torneo + ", estadio=" + estadio + ", fechayhora=" + fechayhora + ", estado=" + estado + ", resultado=" + resultado + '}';
     }
     
     

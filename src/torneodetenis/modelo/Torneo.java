@@ -64,6 +64,11 @@ public class Torneo {
     public void setFecha_fin(LocalDate fecha_fin) {
         this.fecha_fin = fecha_fin;
     }
+
+    @Override
+    public String toString() {
+        return "Torneo{" + "id_torneo=" + id_torneo + ", nombre_torneo=" + nombre_torneo + ", fecha_inicio=" + fecha_inicio + ", fecha_fin=" + fecha_fin + '}';
+    }
     
     
 }

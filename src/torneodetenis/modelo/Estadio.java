@@ -117,6 +117,11 @@ public class Estadio {
     public void setCantidad_espectadores(int cantidad_espectadores) {
         this.cantidad_espectadores = cantidad_espectadores;
     }
+
+    @Override
+    public String toString() {
+        return "Estadio{" + "id_estadio=" + id_estadio + ", numero_ident=" + numero_ident + ", ciudad=" + ciudad + ", direccion=" + direccion + ", estado=" + estado + ", categoria=" + categoria + ", largo=" + largo + ", ancho=" + ancho + ", cantidad_espectadores=" + cantidad_espectadores + '}';
+    }
     
     
 }

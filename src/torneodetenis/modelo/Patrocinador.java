@@ -51,6 +51,11 @@ public class Patrocinador {
     public void setIndumentaria(String indumentaria) {
         this.indumentaria = indumentaria;
     }
+
+    @Override
+    public String toString() {
+        return "Patrocinador{" + "id_patrocinador=" + id_patrocinador + ", marca=" + marca + ", indumentaria=" + indumentaria + '}';
+    }
     
     
 }

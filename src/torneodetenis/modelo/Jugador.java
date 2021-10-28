@@ -119,6 +119,10 @@ public class Jugador {
     public void setDiestro(boolean diestro) {
         this.diestro = diestro;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Jugador{" + "id_jugador=" + id_jugador + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", fecha_nac=" + fecha_nac + ", altura=" + altura + ", peso=" + peso + ", estilo=" + estilo + ", diestro=" + diestro + '}';
+    }
     
 }
