@@ -33,13 +33,8 @@ public class TorneoDeTenis {
             Jugador jugador = new Jugador("Pedro", "Picapiedra", 1244301, LocalDate.of(2012, 12, 12), 1, 1, "ofencivo", true);
             
             //jd.agregarJugador(jugador);
-           
-            
-       
-            
+                       
             System.out.println(pd.obtenerPartidos());
-            
-            
             
         }catch(ClassNotFoundException ex){
             JOptionPane.showMessageDialog(null, "Hay mi madre el bicho");
